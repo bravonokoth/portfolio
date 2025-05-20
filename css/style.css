@@ -1,0 +1,204 @@
+/* Define theme variables */
+:root[data-theme="light"] {
+    --background-color: #ffffff;
+    --text-color: #212529;
+    --section-bg: #f8f9fa;
+    --navbar-bg: #343a40;
+    --navbar-text: #ffffff;
+    --card-bg: #ffffff;
+    --card-text: #212529;
+    --footer-bg: #212529;
+    --footer-text: #ffffff;
+    --hero-overlay: rgba(0, 0, 0, 0.3); /* Reduced from 0.5 to 0.3 for more visibility */
+    --social-link-color: #212529;
+    --search-bg: #ffffff;
+    --search-text: #212529;
+    --search-border: #ced4da;
+    --partner-bg: #343a40;
+    --partner-text: #ffffff;
+}
+
+:root[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --section-bg: #2c2c2c;
+    --navbar-bg: #1c2526;
+    --navbar-text: #e0e0e0;
+    --card-bg: #2c2c2c;
+    --card-text: #e0e0e0;
+    --footer-bg: #1c2526;
+    --footer-text: #e0e0e0;
+    --hero-overlay: rgba(0, 0, 0, 0.5); /* Reduced from 0.7 to 0.5 for more visibility */
+    --social-link-color: #e0e0e0;
+    --search-bg: #2c2c2c;
+    --search-text: #e0e0e0;
+    --search-border: #444;
+    --partner-bg: #1c2526;
+    --partner-text: #e0e0e0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    padding-top: 56px; /* Adjust for fixed navbar height */
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--navbar-bg) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--navbar-text) !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #cccccc !important;
+}
+
+#theme-toggle, #search-toggle {
+    color: var(--navbar-text) !important;
+}
+
+/* Search Bar */
+#search-bar {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#search-input {
+    background-color: var(--search-bg) !important;
+    color: var(--search-text) !important;
+    border-color: var(--search-border) !important;
+}
+
+#search-input::placeholder {
+    color: var(--search-text) !important;
+    opacity: 0.6;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    /* Photo by Negative Space on Pexels: https://www.pexels.com/photo/3184292/ */
+    background: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg') no-repeat center center/cover;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--hero-overlay);
+}
+
+.hero-content {
+    z-index: 1;
+    text-align: left;
+}
+
+.hero-passport {
+    max-width: 200px; /* Reduced size */
+    height: auto;
+    z-index: 1;
+    border: 3px solid #fff;
+}
+
+/* Biography Section */
+.bio-section {
+    padding: 100px 0; /* Increased padding */
+    background: var(--section-bg) !important;
+}
+
+.bio-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.bio-section .social-links a {
+    color: var(--social-link-color) !important;
+}
+
+/* Services Section */
+.services-section {
+    padding: 100px 0; /* Increased padding */
+}
+
+.service-card {
+    transition: transform 0.3s;
+    background-color: var(--card-bg) !important;
+    color: var(--card-text) !important;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 60px 0;
+    background: var(--section-bg) !important;
+}
+
+.skill-progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 60px 0;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-section .card {
+    background-color: var(--card-bg) !important;
+    color: var(--card-text) !important;
+}
+
+/* Partners Banner */
+.partners-section {
+    padding: 30px 0;
+    background: var(--partner-bg) !important;
+    color: var(--partner-text) !important;
+}
+
+.partner-logo {
+    margin: 0 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+    background: var(--footer-bg) !important;
+    color: var(--footer-text) !important;
+}
+
+.footer .social-links a {
+    color: var(--footer-text) !important;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.footer .contact-details {
+    text-align: center;
+    margin-bottom: 20px;
+}

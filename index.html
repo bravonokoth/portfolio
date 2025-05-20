@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">John Doe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="search-toggle" class="btn btn-link nav-link" title="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn btn-link nav-link" title="Toggle Theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Search Input (Hidden by Default) -->
+        <div id="search-bar" class="container mt-2 d-none">
+            <input type="text" id="search-input" class="form-control" placeholder="Search portfolio..." autocomplete="off">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 hero-content">
+                    <h1 class="display-4 fw-bold">John Doe</h1>
+                    <p class="lead">Web Developer & Designer</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <!-- Photo by Christina Morillo on Pexels: https://www.pexels.com/photo/1181686/ -->
+                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" class="hero-passport img-fluid rounded-circle" alt="Passport Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section class="bio-section" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <!-- Photo by Andrea Piacquadio on Pexels: https://www.pexels.com/photo/1234567/ -->
+                    <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" class="rounded-circle img-fluid" alt="Profile">
+                </div>
+                <div class="col-md-8">
+                    <p>Hi, I'm John Doe, a passionate web developer with over 5 years of experience in creating responsive and user-friendly websites. I specialize in front-end and back-end development, delivering high-quality solutions for clients worldwide.</p>
+                    <div class="social-links my-3">
+                        <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="bio-buttons">
+                        <a href="assets/cv.pdf" class="btn btn-primary" download>Download CV</a>
+                        <a href="#contact" class="btn btn-success">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="text-center mb-5">Services Offered</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-code fa-3x mb-3"></i>
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Building responsive and dynamic websites using modern technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-paint-brush fa-3x mb-3"></i>
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Creating intuitive and visually appealing user interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                            <h5 class="card-title">Mobile Optimization</h5>
+                            <p class="card-text">Ensuring websites are fully optimized for mobile devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="text-center mb-5">My Skills</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <!-- Photo by Negative Space on Pexels: https://www.pexels.com/photo/3183150/ -->
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" class="img-fluid rounded" alt="Skills">
+                </div>
+                <div class="col-md-8">
+                    <div class="mb-3">
+                        <h6>HTML/CSS</h6>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h6>JavaScript</h6>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h6>React</h6>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Node.js</h6>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 portfolio-item">
+                    <div class="card shadow-sm">
+                        <!-- Photo by Negative Space on Pexels: https://www.pexels.com/photo/3183173/ -->
+                        <img src="https://images.pexels.com/photos/3183173/pexels-photo-3183173.jpeg" class="portfolio-img" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">A responsive e-commerce website built with React and Node.js.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item">
+                    <div class="card shadow-sm">
+                        <!-- Photo by Negative Space on Pexels: https://www.pexels.com/photo/3182833/ -->
+                        <img src="https://images.pexels.com/photos/3182833/pexels-photo-3182833.jpeg" class="portfolio-img" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Two</h5>
+                            <p class="card-text">A mobile-optimized dashboard for data analytics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item">
+                    <div class="card shadow-sm">
+                        <!-- Photo by Negative Space on Pexels: https://www.pexels.com/photo/3182750/ -->
+                        <img src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg" class="portfolio-img" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Three</h5>
+                            <p class="card-text">A modern landing page with stunning UI/UX design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Banner -->
+    <section class="partners-section" id="partners">
+        <div class="container">
+            <h4>Our Partners</h4>
+            <div class="d-flex justify-content-center flex-wrap">
+                <span class="partner-logo"><i class="fab fa-ibm fa-2x"></i> IBM</span>
+                <span class="partner-logo"><i class="fab fa-tesla fa-2x"></i> Tesla</span>
+                <span class="partner-logo"><i class="fab fa-oracle fa-2x"></i> Oracle</span>
+                <span class="partner-logo"><i class="fab fa-microsoft fa-2x"></i> Microsoft</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="contact-details text-center">
+                <p>Email: john.doe@example.com | Phone: +123 456 7890 | Address: 123 Main St, City</p>
+            </div>
+            <div class="social-links text-end">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Theme Toggle, Search, and Smooth Scroll Script -->
+    <script>
+        // Theme Toggle
+        const toggleButton = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        const themeIcon = toggleButton.querySelector('i');
+
+        // Load saved theme from localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        themeIcon.className = savedTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+
+        toggleButton.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            htmlElement.setAttribute('data-theme', newTheme);
+            themeIcon.className = newTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Search Functionality
+        const searchToggle = document.getElementById('search-toggle');
+        const searchBar = document.getElementById('search-bar');
+        const searchInput = document.getElementById('search-input');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        searchToggle.addEventListener('click', () => {
+            searchBar.classList.toggle('d-none');
+            searchInput.focus();
+        });
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+            portfolioItems.forEach(item => {
+                const title = item.querySelector('.card-title').textContent.toLowerCase();
+                const description = item.querySelector('.card-text').textContent.toLowerCase();
+                if (title.includes(query) || description.includes(query)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
